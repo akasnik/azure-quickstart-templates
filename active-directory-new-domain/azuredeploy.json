@@ -172,7 +172,7 @@
                 "name": "Aligned"
             }
         },
-        {
+        /*{
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2018-11-01",
             "name": "VNet",
@@ -200,7 +200,7 @@
                     }
                 }
             }
-        },
+        },*/
         {
             "type": "Microsoft.Network/loadBalancers",
             "apiVersion": "2019-02-01",
@@ -247,7 +247,7 @@
             "name": "[parameters('networkInterfaceName')]",
             "location": "[parameters('location')]",
             "dependsOn": [
-                "VNet",
+                //"VNet",
                 "[parameters('loadBalancerName')]"
             ],
             "properties": {
